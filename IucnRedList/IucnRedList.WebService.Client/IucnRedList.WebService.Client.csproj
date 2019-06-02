@@ -47,11 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IucnRedListApiV3Client.cs" />
+    <Compile Include="IucnRedListApiV3UriFormats.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IucnRedList.Model\IucnRedList.Model.csproj">
+      <Project>{EFCBA83B-7300-4CBB-B23E-035E2C8DDE6C}</Project>
+      <Name>IucnRedList.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

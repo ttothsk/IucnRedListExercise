@@ -61,6 +61,10 @@
       <Project>{EFCBA83B-7300-4CBB-B23E-035E2C8DDE6C}</Project>
       <Name>IucnRedList.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\IucnRedList.WebService.Client\IucnRedList.WebService.Client.csproj">
+      <Project>{F067299A-BBBA-499D-98F0-425DFFB10709}</Project>
+      <Name>IucnRedList.WebService.Client</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

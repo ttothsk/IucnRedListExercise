@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Net.Http;
-using System.Net.Http.Headers;
 using IucnRedList.Model;
+using IucnRedList.WebService.Client;
 
 namespace IucnRedList.ConsoleApp
 {
@@ -9,26 +8,22 @@ namespace IucnRedList.ConsoleApp
   {
     static void Main(string[] args)
     {
-      using (var client = new HttpClient())
+      using (IucnRedListApiV3Client client = new IucnRedListApiV3Client())
       {
-        client.BaseAddress = new Uri("http://apiv3.iucnredlist.org/api/v3/");
-        client.DefaultRequestHeaders.Accept.Clear();
-        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-        //GET Method  
-        HttpResponseMessage response = client.GetAsync("region/list?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee").Result;
-        if (response.IsSuccessStatusCode)
+        RegionsResponse regions = client.GetRegionsAsync().Result;
+
+        if (regions == null)
         {
-          RegionsResponse responseContent = response.Content.ReadAsAsync<RegionsResponse>().Result;
-
-          foreach (Region result in responseContent.Results)
-          {
-            Console.WriteLine(string.Format("{0}-{1}", result.Identifier, result.Name));
-          }
-
+          Console.WriteLine("Error ocurred loading the list of regions");
+          Console.ReadKey();
+          return;
         }
-        else
+
+        Console.WriteLine("Regions:");
+
+        for (int i = 0; i < regions.Results.Count; i++)
         {
-          Console.WriteLine("Internal server Error");
+          Console.WriteLine(string.Format("{0}  {1}", i, regions.Results[i].Name));
         }
       }
 
