@@ -6,4 +6,8 @@
 /IucnRedList/IucnRedList.Model/obj/Debug
 /.vs
 /IucnRedList/.vs/IucnRedList/v16
-/IucnRedList/packages/Newtonsoft.Json.12.0.2
+/IucnRedList/packages/
+/IucnRedList/IucnRedList.ConsoleApp/bin/Debug
+/IucnRedList/IucnRedList.ConsoleApp/obj/Debug
+/IucnRedList/IucnRedList.WebService.Client/bin/Debug
+/IucnRedList/IucnRedList.WebService.Client/obj/Debug
