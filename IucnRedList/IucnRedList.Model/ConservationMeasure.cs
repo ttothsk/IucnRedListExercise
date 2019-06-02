@@ -5,6 +5,9 @@ using Newtonsoft.Json;
 
 namespace IucnRedList.Model
 {
+  /// <summary>
+  /// Represents IUCN Red List API V3 Conservation Measure result item
+  /// </summary>
   public class ConservationMeasure
   {
     [JsonProperty("code")]

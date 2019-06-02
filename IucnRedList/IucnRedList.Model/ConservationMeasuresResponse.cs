@@ -6,6 +6,10 @@ using Newtonsoft.Json;
 
 namespace IucnRedList.Model
 {
+  /// <summary>
+  /// Represents IUCN Red List API V3 response for Regional measures service methods
+  /// </summary>
+  /// <see cref="http://apiv3.iucnredlist.org/api/v3/docs#measures"/>
   public class ConservationMeasuresResponse
   {
     [JsonProperty("id")]

@@ -6,6 +6,10 @@ using Newtonsoft.Json;
 
 namespace IucnRedList.Model
 {
+  /// <summary>
+  /// Represents IUCN Red List API V3 response for Species service methods
+  /// </summary>
+  /// <see cref="http://apiv3.iucnredlist.org/api/v3/docs#species"/>
   public class SpeciesResponse
   {
     [JsonProperty("count")]

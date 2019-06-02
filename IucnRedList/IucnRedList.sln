@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IucnRedList.ConsoleApp", "I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IucnRedList.WebService.Client", "IucnRedList.WebService.Client\IucnRedList.WebService.Client.csproj", "{F067299A-BBBA-499D-98F0-425DFFB10709}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IucnRedList.Model.Tests", "IucnRedList.Model.Tests\IucnRedList.Model.Tests.csproj", "{D5F98861-C444-46D5-80C6-FC3B272493A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F067299A-BBBA-499D-98F0-425DFFB10709}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F067299A-BBBA-499D-98F0-425DFFB10709}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F067299A-BBBA-499D-98F0-425DFFB10709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F98861-C444-46D5-80C6-FC3B272493A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F98861-C444-46D5-80C6-FC3B272493A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F98861-C444-46D5-80C6-FC3B272493A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F98861-C444-46D5-80C6-FC3B272493A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
